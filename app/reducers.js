@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-
-import {VisibilityFilter} from './actions';
+import { ADD_TODO, COMPLETE_TODO, SET_VISIBILITY_FILTER, VisibilityFilters } from './actions';
+const { SHOW_ALL } = VisibilityFilters;
 
 const initialState = {
-	visibilityFilter: VisibilityFilter.SHOW_ALL,
+	visibilityFilter: VisibilityFilters.SHOW_ALL,
 	todos: []
 };
 
