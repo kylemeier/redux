@@ -16,7 +16,6 @@ export function addTodo(text){
 }
 
 export function toggleTodo(id){
-	console.log(id);
 	return { type: TOGGLE_TODO, id };
 }
 
